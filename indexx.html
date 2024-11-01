@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <title>FLOWER STORE</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navegacao">
+		<div class="inicio">
+            <div class="um">
+                <img src="imagens/logo.png" alt="logo da loja" width="90" height="90">
+            </div>
+            <div class="dois">
+                <h3>FLOWER STORE</h3>
+            </div>
+        </div>
+		<div class="meio">  
+	        <!--<img src="imagens/lupa.png" alt="lupa" width="30" height="30">-->
+            <input type="text" name="pesquisa" size="50" placeholder="Digite para buscar..." class="pesquisa">
+        </div>
+		<div class="fim">
+            <div class="fim1">
+                <input type="image" src="imagens/compra.png" alt="Botão de Imagem" style="width: 60px; height: 60px;">
+            </div>
+            <div class="fim2">
+                <input type="image" src="imagens/login.png" alt="Botão de Imagem" style="width: 60px; height: 60px;">
+            </div>
+        </div>
+    </div>
+
+    <nav class="principal">
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Arranjos</a>
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Buquês</a>
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Cestas</a>
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Presentes</a>
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Flores</a>
+        <a style="color: #5e834e; text-decoration: none;" class="principal_link" href="#">Oferta</a>
+    </nav>
+        <br>
+        <div class="carrossel">
+            <div class="imagens">
+                <img src="imagens/flor1oficial.png" alt="Imagem 1">
+                <img src="imagens/flor2oficial.png" alt="Imagem 2">
+                <img src="imagens/flor3oficial.png" alt="Imagem 3">
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="flower">
+            <img src="imagens/Rosas.jpg" alt="Rosa" width="200px" height="200px">
+            <h2>Rosas</h2>
+            <p style="color: white">R$ 50,00</p>
+            <br>
+            <button onclick="addToCart('Rosa', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/girassoloficial.png" alt="Girassol" width="200px" height="200px">
+            <h2>Girassóis</h2>
+            <p style="color: white">R$ 30,00</p>
+            <br>
+            <button onclick="addToCart('Girassol', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/tulipasoficial.png" alt="Tulipa" width="200px" height="200px">
+            <h2>Tulipas</h2>
+            <p style="color: white">R$ 95,00</p>
+            <br>
+            <button onclick="addToCart('Tulipa', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/liriosoficial.png" alt="Lírio" width="200px" height="200px">
+            <h2>Lírios</h2>
+            <p style="color: white">R$ 140,00</p>
+            <br>
+            <button onclick="addToCart('Lírio', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/margaridaoficial.png" alt="Rosa" width="200px" height="200px">
+            <h2>Margaridas</h2>
+            <p style="color: white">R$ 45,00</p>
+            <br>
+            <button onclick="addToCart('Rosa', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/orquideasoficial.png" alt="Girassol" width="200px" height="200px">
+            <h2>Orquídeas</h2>
+            <p style="color: white">R$ 73,00</p>
+            <br>
+            <button onclick="addToCart('Girassol', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/jasminoficial.png" alt="Tulipa" width="200px" height="200px">
+            <h2>Jasmin </h2>
+            <p style="color:white">R$ 25,00</p>
+            <br>
+            <button onclick="addToCart('Tulipa', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/cameliaoficial.png" alt="Lírio" width="200px" height="200px">
+            <h2>Camélia </h2>
+            <p style="color:white">R$ 90,00</p>
+            <br>
+            <button onclick="addToCart('Lírio', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/melissaoficial.png" alt="Rosa" width="200px" height="200px">
+            <h2>Melissa</h2>
+            <p style="color: white">R$ 125,00</p>
+            <br>
+            <button onclick="addToCart('Rosa', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/irisoficial.png" alt="Girassol" width="200px" height="200px">
+            <h2>Íris</h2>
+            <p style="color: white">R$ 62,00</p>
+            <br>
+            <button onclick="addToCart('Girassol', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/gardenciaoficial.png" alt="Tulipa" width="200px" height="200px">
+            <h2>Gardência</h2>
+            <p style="color:white">R$ 190,00</p>
+            <br>
+            <button onclick="addToCart('Tulipa', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="flower">
+            <img src="imagens/oficial.png" alt="Lírio" width="200px" height="200px">
+            <h2>Hortência</h2>
+            <p style="color: white">R$ 135,00</p>
+            <br>
+            <button onclick="addToCart('Lírio', 20)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape1">
+            <p>jdshfbk</p>
+        </div>
+        <div class="rodape2">
+            <p>&copy; 2024 Loja de Flores. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

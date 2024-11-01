@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navegacao{
+    display: flex;/*contender*/
+    background-color: #5e834e;/*cor de fundo*/
+    height: 90px;/*altura*/
+    padding: 20px;/*espaçamento*/
+    
+}
+.inicio{
+    flex: 1;/*item 1*/
+    color: white;
+    display: flex; /* Para centralizar internamente com flex */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    text-align: left; /* Centraliza o texto no início */
+}
+    
+.meio{
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;/*centralisa horizontalmente*/
+    text-align: center;
+    flex: 1;/*item 2*/
+}
+
+.pesquisa{
+    height: 40px;/*altura*/
+    border-radius: 15px; /*borda*/
+    padding: 15px; /* Opcional: para espaço interno */
+}
+.fim{
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center;/* Centraliza verticalmente */
+    justify-content: end;/* Alinha o conteúdo no fim */
+    flex: 1;/*item 3*/
+}
+
+.fim1{
+    display: flex; /* Para centralizar internamente com flex */
+    width: 90px; /*largura*/
+}
+.fim2{
+    display: flex; /* Para centralizar internamente com flex */
+    width: 70px; /*largura*/
+}
+.destaque-container {
+        width: 500px; /* Largura do destaque */
+        height: 200px; /* Altura do destaque */
+        overflow: hidden; /* Oculta o conteúdo que sai da área */
+        margin: 50px auto; /* Centraliza a div na tela */
+        position: relative; /* Permite o posicionamento absoluto dos itens */
+        border: 2px solid #5e834e; /* Borda do destaque */
+        border-radius: 10px; /* Bordas arredondadas */
+        background-color: #5e834e; /* Cor de fundo do destaque */
+    }
+.container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+.flower {
+        background-color: #5e834e;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+        width: 20%;
+        text-align: center;
+        transition: transform 0.2s ;
+        box-shadow: 10px 5px 5px #5e834e;
+}
+.flower:hover {
+        transform: scale(1.05);
+}
+.flower img {
+        max-width: 100%;
+        border-radius: 5px;
+}
+.flower h2 {
+        color: white;
+}
+.flower button {
+        background-color: white;
+        color: #5e834e;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.flower button:hover {
+        background-color: #45a049;
+}
+
+.principal {
+        max-width: 1550px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        gap: 40px;
+        border-bottom: 3px solid #5e834e;
+}
+.login-form {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+.rodape{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #45a049;
+}
+.rodape1{
+    background-color: aqua;
+}
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    max-width: 600px;
+    border-radius: 2%;
+}
+.imagens {
+    display: flex;
+    transition: transform 2s ease-in-out;
+    width: 300%;
+}
+.imagens img {
+    width: 100%;
+    height: auto;
+}
