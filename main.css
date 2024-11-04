@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navegacao{
+    display: flex;/*contender*/
+    background-color: #5e834e;/*cor de fundo*/
+    height: 90px;/*altura*/
+    padding: 20px;/*espaçamento*/
+    
+}
+.inicio{
+    flex: 1;/*item 1*/
+    color: white;
+    display: flex; /* Para centralizar internamente com flex */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    text-align: left; /* Centraliza o texto no início */
+}
+    
+.meio{
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;/*centralisa horizontalmente*/
+    text-align: center;
+    flex: 1;/*item 2*/
+}
+
+.pesquisa{
+    height: 40px;/*altura*/
+    border-radius: 15px; /*borda*/
+    padding: 15px; /* Opcional: para espaço interno */
+}
+.fim{
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center;/* Centraliza verticalmente */
+    justify-content: end;/* Alinha o conteúdo no fim */
+    flex: 1;/*item 3*/
+}
+
+.fim1{
+    display: flex; /* Para centralizar internamente com flex */
+    width: 90px; /*largura*/
+}
+.fim2{
+    display: flex; /* Para centralizar internamente com flex */
+    width: 70px; /*largura*/
+}
+.destaque-container {
+        width: 500px; /* Largura do destaque */
+        height: 200px; /* Altura do destaque */
+        overflow: hidden; /* Oculta o conteúdo que sai da área */
+        margin: 50px auto; /* Centraliza a div na tela */
+        position: relative; /* Permite o posicionamento absoluto dos itens */
+        border: 2px solid #5e834e; /* Borda do destaque */
+        border-radius: 10px; /* Bordas arredondadas */
+        background-color: #5e834e; /* Cor de fundo do destaque */
+    }
+.container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+.flower {
+        background-color: #5e834e;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+        width: 20%;
+        text-align: center;
+        transition: transform 0.2s ;
+        box-shadow: 10px 5px 5px #5e834e;
+}
+.flower:hover {
+        transform: scale(1.05);
+}
+.flower img {
+        max-width: 100%;
+        border-radius: 5px;
+}
+.flower h2 {
+        color: white;
+}
+.flower button {
+        background-color: white;
+        color: #5e834e;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.flower button:hover {
+        background-color: #45a049;
+}
+
+.categorias {
+        max-width: 1550px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        gap: 40px;
+        border-bottom: 3px solid #5e834e;
+}
+.login-form {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+/*RODAPE*/
+.rodape1{
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #45a049;
+    display: flex;
+    height: 100px;
+}
+
+.rodape2 {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #8acf8e;
+    display: flex;
+}
+
+.social{
+    display: flex;
+    flex: 1;
+    height: auto;
+    
+}
+
+.text1{
+    display: flex;
+    padding: 4px;
+    justify-content: center;/* Alinha o conteúdo no meio */
+    color:#5e834e;
+    background-color: rgb(255, 255, 255);
+    height: 30px;  
+    border: 2px solid #ffffff; /* Espessura, estilo e cor da borda */
+    border-radius: 20px; /* Define o raio das bordas arredondadas */
+}
+
+.text2{
+    display: flex;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff; /* Espessura, estilo e cor da borda */
+    border-radius: 20px; /* Define o raio das bordas arredondadas */
+    padding: 4px;
+    justify-content: center;/* Alinha o conteúdo no meio */
+    color:#5e834e;
+}
+
+.social_logo, .social_text{
+    padding-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.email{
+    flex: 1;
+    height: auto;/* Ajuste automático da altura */
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center;/* Centraliza verticalmente */
+    justify-content: center;/* Alinha o conteúdo no meio */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 10px; /* Opcional, para dar um pouco de espaçamento interno */
+}
+
+.promocoes{
+    border: 2px solid #000000; /* Espessura, estilo e cor da borda */
+    border-radius: 10px; /* Define o raio das bordas arredondadas */
+    height: 100px;
+}
+
+/*JavaScripty*/
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    max-width: 600px;
+    border-radius: 2%;
+}
+.imagens {
+    display: flex;
+    transition: transform 2s ease-in-out;
+    width: 300%;
+}
+.imagens img {
+    width: 100%;
+    height: auto;
+}
+
+/*inicio rodape*/
+.principal{
+    display: flex;
+    height: 110px;
+    background-color: #45a049;
+}
+
+.email{
+    display: flex;
+    flex: 1;
+    padding: 15px; /* Opcional, para dar um pouco de espaçamento interno */
+    flex-direction: column; /* Alinha os itens numa coluna */
+    color: white;
+}
+
+.observacoes {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coloca o conteúdo em uma coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.link {
+    display: flex;
+    padding: 3px;
+}
+
+.link a {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s; /* Adiciona uma transição suave */
+}
+
+.link a:hover, .zap a:hover, .instagram a:hover {
+    color: #FFD700; /* Define a cor ao passar o mouse (exemplo: dourado) */
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.zap, .instagram { 
+    display: flex;
+    flex-direction: column; /* Alinha imagem e texto na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    
+}
+
+.zap {
+    display: flex;
+    flex: 1;
+    height: 50%;
+}
+
+.instagram {
+    display: flex;
+    flex: 1;
+    height: 50%;
+}
+
+.zap a, .instagram a {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s; /* Adiciona uma transição suave */
+    display: flex;
+    height: 50px;
+    align-items: center; /* Centraliza a imagem e o texto */
+}
+
+.pagamentos {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: white;
+    flex-direction: column; /* Coloca o conteúdo em uma coluna */
+}
+
+.nome{
+    flex: 1;
+    justify-content: center; /* Centraliza horizontalmente */
+    display: flex;
+    height: 20%;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px;
+    
+}
+.cartao {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+
+.form{
+    border-radius: 20px;
+    height: 29px;
+    width: 230px;
+    text-align: center;
+}
+
+.segundo {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #8acf8e;
+    display: flex;
+}
+/*fim do rodape*/
+
+/* Estilos para o botão */
+
+
+.h3{
+    color: white;
+}
+.botao-imagem {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.usuario{
+    color: white;
+}
