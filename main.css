@@ -1,0 +1,390 @@
+*{
+    margin: 0; /*margem*/
+    box-sizing: border-box; /*tamanho*/
+}
+
+.navegacao{
+    display: flex; /*contender*/
+    background-color: #5e834e; /*cor de fundo*/
+    height: 90px; /*altura*/
+    padding: 20px; /*espaçamento*/
+}
+
+.inicio{
+    flex: 1; /*item 1*/
+    color: white; /*cor*/
+    display: flex; /*Para centralizar internamente com flex*/
+    align-items: center; /*Centraliza verticalmente*/
+    justify-content: flex-start; /*Alinha o conteúdo à esquerda*/
+    text-align: left; /*Centraliza o texto no início*/
+}
+    
+.meio{
+    display: flex; /*Para centralizar internamente com flex*/
+    align-items: center; /*Centraliza verticalmente*/
+    justify-content: center; /*centralisa horizontalmente*/
+    text-align: center; /*texto centralizado*/
+    flex: 1; /*item 2*/
+}
+
+.pesquisa{
+    height: 40px; /*altura*/
+    border-radius: 15px; /*borda*/
+    padding: 15px; /*Opcional: para espaço interno*/
+}
+.fim{
+    display: flex; /*Para centralizar internamente com flex*/
+    align-items: center; /*Centraliza verticalmente*/
+    justify-content: end; /*Alinha o conteúdo no fim*/
+    flex: 1 /*item 3*/
+}
+
+.fim1{
+    display: flex; /*Para centralizar internamente com flex*/
+    width: 90px; /*largura*/
+}
+.fim2{
+    display: flex; /*Para centralizar internamente com flex*/
+    width: 70px; /*largura*/
+}
+.destaque-container {
+        width: 500px; /*Largura do destaque*/
+        height: 200px; /*Altura do destaque*/
+        overflow: hidden; /*Oculta o conteúdo que sai da área*/
+        margin: 50px auto; /*Centraliza a div na tela*/
+        position: relative; /*Permite o posicionamento absoluto dos itens*/
+        border: 2px solid #5e834e; /*Borda do destaque*/
+        border-radius: 10px; /*Bordas arredondadas*/
+        background-color: #5e834e; /*Cor de fundo do destaque*/
+    }
+.container {
+        width: 80%; /*Define a largura do container como 80% da largura da tela*/
+        margin: 20px auto; /*adiciona margem*/
+        display: flex; /*divisão centralizada*/
+        flex-wrap: wrap; /*Permite que os itens dentro do container se reorganizem em várias linhas, caso não caibam em uma única linha*/
+        justify-content: space-around; /*Distribui os itens igualmente com espaçamento entre eles*/
+        background-image: url("../imagens/extra4.png"); /*Define uma imagem de fundo para o container*/
+        background-position: 0%; /*Define a posição da imagem de fundo no canto superior esquerdo do container*/
+}
+.flower {
+        background-color: #5e834e; /*Define a cor do fundo de cada item*/
+        border: 1px solid #ddd; /*Adiciona borda fina*/
+        border-radius: 5px; /*Arrendonda borda fina*/
+        padding: 15px; /*Preenchimento*/
+        margin: 10px; /*Margem*/
+        width: 20%; /*Largura*/
+        text-align: left; /*Alinha o texto dentro de cada item á esquerda*/
+        transition: transform 0.2s; /*transição*/
+        box-shadow: 10px 5px 5px #5e834e; /*Aplica uma sombra*/
+}
+.flower:hover {
+        transform: scale(1.05); /*Dimensionar o tamanho do elemento*/
+}
+.flower img {
+        max-width: 100%; /*Largura*/
+        border-radius: 5px; /*Arrendendamento da borda*/
+}
+.flower h2 {
+        color: white; /*cor*/
+}
+.flower button {
+        background-color: #8acf8e; /*Cor do fundo*/
+        color: white; /*Cor*/
+        border: none; /*Borda*/
+        padding: 10px; /*Espaçamento interno*/
+        border-radius: 5px; /*Arredondamento de borda*/
+        cursor: pointer; /*Cursor*/
+}
+
+.principal {
+        max-width: 1550px; /*Largura*/
+        background: white; /*Cor do fundo*/
+        padding: 20px; /*Espaçamento interno*/
+        border-radius: 8px; /*Arrendodamento da borda*/
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /*Sombra*/
+        position: relative; /*Posição*/
+        display: flex; /*Centralizar a div*/
+        align-items: center; /*Centraliza verticalmente*/
+        justify-content: center; /*Centralizar*/
+        padding: 0.5rem; /*Espaçamento interno*/
+        gap: 40px; /*Espaçamento entre os itens*/
+        border-bottom: 3px solid #5e834e; /*Borda*/
+        background-image: url("../imagens/extra3.png"); /*Image como fundo*/
+        background-position: 0%; /*Cor e posição*/
+}
+.login-form {
+        display: none; /*Centralizar a div*/
+        position: absolute; /*Posição*/
+        top: 0; /**/
+        left: 0; /*Esquerda*/
+        right: 0; /*Direita*/
+        background: white; /*Cor de fundo*/
+        padding: 20px; /*Espaçamento interno*/
+        border-radius: 8px; /*Arrendodamento da borda*/
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /*borda*/
+    }
+
+/*RODAPE*/
+
+.rodape1{
+    justify-content: center; /*Centralizar*/
+    padding: 20px; /*Espaçamento interno*/
+    color: white; /*Cor*/
+    position: relative; /*Posição*/
+    bottom: 0; /*Posição Vertical*/
+    width: 100%; /*Largura*/
+    background-color: #45a049; /*Cor do fundo*/
+    display: flex; /*Centralizar a div*/
+    height: 100px; /*Altura*/
+}
+
+.rodape2 {
+    text-align: center; /*Alinha o texto no centro*/
+    justify-content: center; /*Alinhar conteúdo no meio*/
+    padding: 20px; /*Espaçamento interno*/
+    color: white; /*Cor*/
+    position: relative; /*Posição*/
+    bottom: 0; /*Posição Vertical*/
+    width: 100%; /*Largura*/
+    background-color: #8acf8e; /*Cor do fundo*/
+    display: flex; /*Centralizar container*/
+}
+
+.social{
+    display: flex; /*Distribuir o espaço de maneira eficiente entre os itens dentro de um container*/
+    flex: 1; /*Pode crescer para preencher o espaço disponível dentro do container flex*/
+    height: auto; /*Altura*/
+    
+}
+
+.text1{
+    display: flex; /*Centralizar na div*/
+    padding: 4px; /*Espaçamento interno*/
+    justify-content: center; /*Alinha o conteúdo no meio*/
+    color:#5e834e; /*Cor*/
+    background-color: rgb(255, 255, 255); /*Cor de fundo*/
+    height: 30px; /*Altura*/
+    border: 2px solid #ffffff; /*Espessura, estilo e cor da borda*/
+    border-radius: 20px; /*Define o raio das bordas arredondadas*/
+}
+
+.text2{
+    display: flex; /*Centralizar na div*/
+    height: 30px; /*Altura*/
+    background-color: #ffffff; /*Cor do fundo*/
+    border: 2px solid #ffffff; /*Espessura, estilo e cor da borda*/
+    border-radius: 20px; /*Define o raio das bordas arredondadas*/
+    padding: 4px; /*Espaçamento interno*/
+    justify-content: center;/*Alinha o conteúdo no meio*/
+    color:#5e834e; /*Color*/
+}
+
+.social_logo, .social_text{
+    padding-left: 20px; /*Espaçamento interno*/
+    justify-content: center; /*Alinha o conteúdo no meio*/
+    display: flex; /*Centralizar a div*/
+    flex-direction: column; /*Alinha os itens verticalmente*/
+}
+
+.email{
+    flex: 1;
+    height: auto; /*Ajuste automático da altura*/
+    display: flex; /*Para centralizar internamente com flex*/
+    align-items: center; /*Centraliza verticalmente*/
+    justify-content: center; /*Alinha o conteúdo no meio*/
+    flex-direction: column; /*Alinha os itens verticalmente*/
+    padding: 10px; /*Opcional, para dar um pouco de espaçamento interno*/
+}
+
+.promocoes{
+    border: 2px solid #000000; /*Espessura, estilo e cor da borda*/
+    border-radius: 10px; /*Define o raio das bordas arredondadas*/
+    height: 100px; /*Altura*/
+}
+
+.carrossel {
+    width: 600px; /*Largura*/
+    overflow: hidden; /*Tamanho da caixa*/
+    margin: auto; /*Margem*/
+    position: relative; /*Posição*/
+    max-width: 600px; /*Largura*/
+    border-radius: 2%; /*Alinhamento da borda*/
+}
+.imagens {
+    display: flex; /*Centralizar na div*/
+    transition: transform 2s ease-in-out; /*Transição*/
+    width: 300%; /*Largura*/
+}
+.imagens img {
+    width: 600px; /*Largura*/
+    height: auto; /*Altura*/
+}
+
+.prin {
+    display: flex; /*Centralizar na div*/
+    height: 90px; /*Altura*/
+    background-color: #45a049; /*Cor do fundo*/
+}
+
+.email{
+    display: flex; /*Centralizar na div*/
+    flex: 1; /*Definir itens do contêiner*/
+    padding: 15px; /*Opcional, para dar um pouco de espaçamento interno*/
+    flex-direction: column; /*Alinha os itens numa coluna*/
+    color: white; /*Color*/
+}
+
+.observacoes {
+    display: flex; /*Centralizar na div*/
+    flex: 1; /*Definir itens do contêiner*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    flex-direction: column; /*Coloca o conteúdo em uma coluna*/
+    align-items: center; /*Centraliza verticalmente*/
+}
+
+.link {
+    display: flex; /*Centralizar na div*/
+    padding: 3px; /*Posição*/
+}
+
+.link a {
+    color: white; /*Define a cor do texto como branco*/
+    text-decoration: none; /* Remove o sublinhado dos links*/
+    transition: color 0.3s; /*Adiciona uma transição suave*/
+}
+
+.link a:hover, .zap a:hover, .instagram a:hover {
+    color: #FFD700; /*Define a cor ao passar o mouse (exemplo: dourado)*/
+}
+
+.social {
+    flex: 1; /*Definir itens do contêiner*/
+    display: flex; /*Centralizar na div*/
+    flex-direction: column; /*Direção do eixo principal*/
+}
+
+.zap, .instagram { 
+    display: flex; /*Centralizar na div*/
+    flex-direction: column; /*Alinha imagem e texto na vertical*/
+    align-items: center; /*Centraliza horizontalmente*/
+    
+}
+
+.zap {
+    display: flex; /*Centralizar na div*/
+    flex: 1; /*Definir itens do contêiner*/
+    height: 50%; /*Altura*/
+}
+
+.instagram {
+    display: flex; /*Centralizar na div*/
+    flex: 1; /*Definir itens do contêiner*/
+    height: 50%; /*Altura*/
+}
+
+.zap a, .instagram a {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.5; /* Adiciona uma transição suave */
+    display: flex; /*Centralizar na div*/
+    height: 50px; /*Altura*/
+    align-items: center; /* Centraliza a imagem e o texto */
+}
+
+.pagamentos {
+    display: flex; /*Centralizar na div*/
+    flex: 1; /*Definir itens do contêiner*/
+    padding: 10px; /*Espaço interno do elemento*/
+    color: white; /*Cor*/
+    flex-direction: column; /* Coloca o conteúdo em uma coluna */
+}
+
+.nome{
+    flex: 1; /*Definir itens do contêiner*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    display: flex; /*Centraliza na div*/
+    height: 20%; /*Altura*/
+    align-items: center; /*Centraliza verticalmente*/
+}
+.cartao {
+    display: flex; /*Centralizar dentro da div*/
+    flex: 1; /*Definir itens do contêiner*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    align-items: center; /*Centraliza verticalmente*/
+    height: 50%; /*Altura*/ 
+}
+
+.form{
+    border-radius: 20px; /*Arrendodamento da borda*/
+    height: 29px; /*Altura*/
+    width: 230px; /*Largura*/
+    text-align: center; /*Texto alinhado*/
+}
+
+.segundo {
+    text-align: center; /*Texto alinhado*/
+    justify-content: center; /*Controlar o alinhamento e distribição dos itens*/
+    padding: 10px; /*Espaço interno do elemento*/
+    color: white; /*Color*/
+    position: relative; /*Posição*/
+    bottom: 0; /*Posição Vertical*/
+    width: 100%; /*Largura*/
+    background-color: #8acf8e; /*Cor do fundo*/
+    display: flex; /*Centralizar a div*/
+}
+
+/* Estilos do Carrinho Modal */
+.modal {
+    display: none; /*Centralização*/
+    position: fixed; /*Posição*/
+    top: 0; /*Posição Vertical*/
+    left: 0; /*Esquerda*/
+    width: 100%; /*Largura*/
+    height: 100%; /*Altura*/
+    background-color: rgba(0, 0, 0, 0.5); /*Cor de fundo*/
+    justify-content: center; /*Controlar o alinhamento e distribuição dos itens*/
+    align-items: center; /*Alinhar intens ao longo do eixo transversal*/
+}
+
+.modal-conteudo {
+    background-color: #5e834e; /*Cor do fundo*/
+    padding: 20px; /*Espaço interno de um elemento*/
+    border-radius: 8px; /*Arrendodamento da borda*/
+    width: 450px; /*Largura*/
+    border-bottom: 3px solid white; /*Borda*/
+    text-align: center; /*Texto centralizado*/
+}
+
+.fechar {
+    color: white; /*cor*/
+    font-size: 30px; /*Tamanho da fonte*/
+    font-weight: bold; /*Espessura da fonte*/
+    position: absolute; /*Posição*/
+    top: 10px; /*Posição Vertical*/
+    right: 20px; /*Direita*/
+    cursor: pointer; /*Cursos*/
+}
+
+.fechar:hover {
+    color: white; /*Cor*/
+}
+
+#itensCarrinho {
+    list-style: none; /*Definir o estilo das listas*/
+    padding: 0; /*Espaço interno de um elemneto*/
+}
+
+#itensCarrinho li {
+    margin-bottom: 10px; /*Espaçamento na parte inferior*/
+    color: white; /*Cor*/
+}
+
+#totalCarrinho {
+    font-size: 1.2rem; /*Tamanho da fonte*/
+    font-weight: bold; /*Espessura da fonte*/
+    margin-top: 20px; /*Margem*/
+}
+
+button {
+    margin-top: 10px; /*Margem*/
+}
