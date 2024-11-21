@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--orna o site responsivo para dispositivos móveis, ajustando a largura à tela do dispositivo.-->
     <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon"> <!--Define o ícone da página (favicon).-->
     <title>FLOWER STORE</title> <!--Título da página que será exibido na aba do navegador-->
-    <link rel="stylesheet" href="css/main.css"> <!--Faz referência ao arquivo de estilo CSS que controla o layout da página.-->
+    <link rel="stylesheet" href="main.css"> <!--Faz referência ao arquivo de estilo CSS que controla o layout da página.-->
 </head>
 <body>
     <div class="navegacao">
@@ -24,11 +24,17 @@
         
         <!--Dois ícones de imagem para o carrinho de compras e login, com o carrinho associado a um evento JavaScript para mostrar o modal do carrinho-->
         <div class="fim">
+            
+            <!--icone do carrinho-->
             <div class="fim1">
                 <input type="image" src="imagens/carrinho-removebg-preview.png" alt="Carrinho" style="width: 60px; height: 60px;" onclick="toggleCarrinho()">
+                <p>Carrinho</p>
             </div>
+            
+            <!--icone do login-->
             <div class="fim2">
-                <input type="image" src="imagens/login.png" alt="Botão de Imagem" style="width: 60px; height: 60px;">
+                <a href="logins/login.php"><input type="image" src="imagens/login.png" alt="Botão de Imagem" style="width: 60px; height: 60px;"></a>
+                <p>Login</p>
             </div>
         </div>
     </div>
@@ -285,7 +291,7 @@
     </div>
 
     <!--Inclui um arquivo JavaScript para interatividade, como o controle do carrinho de compras e outros comportamentos dinâmicos da página (como a função toggleCarrinho() para exibir o modal do carrinho)-->
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>

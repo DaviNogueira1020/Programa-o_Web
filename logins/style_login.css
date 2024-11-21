@@ -1,0 +1,125 @@
+*{
+    margin: 0%;/*todos os intens vao esticar ate o tamanho maximo horizontalmente*/
+    box-sizing: border-box;
+    overflow-x: hidden; /*impede o rolamento da pagina*/
+}
+
+body{/*corpo da pagina*/
+    font-family: 'Montserrat', sans-serif;/*tipo de fonte*/
+    background-image: url("../imagens/extra4.png");/*fundo*/
+    background-repeat: no-repeat no-repeat; /*imagem nao vai repetir no fundo caso coloque uma imagem pequena*/
+    background-size: cover;/*estica o fundo*/
+    border: 1px solid black;/*borda*/
+    
+}
+div{
+    font-size: 20px;/*espaca os imputs*/
+    text-align: center;
+    position: absolute;/*a cor do fundo fica exatamente enquadrada sobre os intens*/
+    top: 50%;/* v */
+    left: 50%;/* > */
+    transform: translate(-50%, -50%);/*faz a caixa vira ao contrario, importante*/
+    padding: 30px;
+    border-radius: 20px;
+    color: green;
+    background-color: white;
+    
+}
+
+div:hover{/*quando o curso passa em cima da div*/
+    
+    transition: 1s;/*vai fazer a transicao com um delay de alguns segundos*/
+    box-shadow: 2px 3px 30px darkgreen; /*sombra: esqueda, baixo, desfoque*/
+}
+
+section{/*sim, tem uma div e a section no mesmo codigo para evitar conflitos*/
+    display:flex;/*deixa um campo do lado do outro, a div ja estar sendo utilizida*/
+    justify-content:space-evenly;/*deixa as caixa no section afastadas igualmente*/
+}
+
+p{/*paragrafos*/
+    font-size: 12px;
+
+}
+
+input{/*input do html*/
+    border: 2px solid transparent;/*tipo de borda*/
+    outline: none;/*linha de fora do da caixa do imput quando selecionada*/
+    font-size: 15px;/*tamanho da fonte*/
+    /*color: darkgreen; cor da fonte*/
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+/*criei uma cixa em volta do formularios para deixa mais bonito*/
+fieldset{
+    text-align: left;
+    border-color: blue;
+    border-radius: 40px;
+    height: 68px;/*tamanho da linha em volta do campo*/
+}
+
+fieldset:hover{
+    transition: 1s;
+    color: blue;/*muda a cor do fildeset apos o mouse passar em cima*/
+    
+}
+
+/*coloquei a tag button e nao input pois o botao estava dando conflitos, so Deus sabe o porquê*/
+button{/*botoes*/
+    border-color: blue;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    padding: 13px;
+    width: 118px;
+    color: green;
+    border: px solid transparent;
+    
+
+}
+button:hover{/*estilo do botao quando mouse passar em cima*/
+    color: blue;
+    background-color: aqua;
+    border-color: blue;
+    transition: 0.8s;
+    box-shadow: 1px 1px 8px blue;
+
+}
+button:active{/*botao ao ser clicado*/
+    font-size: 12px;/*ele vai diminuir ao ser clicado*/
+    color: white;/*a cor do texto vai mudar ao clicar*/
+    background-color: greenyellow;/*o fundo tambem vai mudar*/
+    border-color: transparent;
+
+    
+}
+
+a{
+    text-decoration:none;/*remove a linha em baixo do link*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:link{/*Define o estilo de links que ainda não foram visitados.*/
+    
+    color: blue;
+
+}
+
+a:visited{/*Define o estilo de links que já foram clicados e visitados.*/
+
+    color: royalblue;
+
+}
+
+a:hover{/*Define o estilo quando o usuário passa o mouse sobre o link*/
+
+    color: darkblue;
+
+}
+
+a:active{ /*faz uma acao ao aperta o link*/
+    
+    color: red
+
+}

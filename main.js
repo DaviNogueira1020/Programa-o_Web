@@ -16,6 +16,8 @@ const imagens = document.querySelector('.imagens');
         function addToCart(nome, preco) {
             const item = { nome, preco };
             carrinho.push(item);
+            
+            
             alert(`${nome} foi adicionado ao carrinho!`);
         }
 

@@ -33,20 +33,38 @@
     padding: 15px; /*Opcional: para espaço interno*/
 }
 .fim{
-    display: flex; /*Para centralizar internamente com flex*/
-    align-items: center; /*Centraliza verticalmente*/
-    justify-content: end; /*Alinha o conteúdo no fim*/
-    flex: 1 /*item 3*/
+    display: flex;/* Para centralizar internamente com flex */
+    align-items: center;/* Centraliza verticalmente */
+    justify-content: end;/* Alinha o conteúdo no fim */
+    flex: 1;/*item 3*/
+    text-align: center;
 }
 
-.fim1{
-    display: flex; /*Para centralizar internamente com flex*/
+.fim1{/*icone de carrinho*/
+    color: transparent;
+    display:block;/* Para centralizar internamente com deixa o exto em baixo */
     width: 90px; /*largura*/
+    border: none;
 }
-.fim2{
-    display: flex; /*Para centralizar internamente com flex*/
-    width: 70px; /*largura*/
+
+.fim1:hover{/*cursor ao passar por cima*/
+    height: 86px;/*aumentar*/
+    transition: 1s;/*durante 1 segundo*/
+    color: white;/*tendo a cor*/
 }
+
+.fim2{/*icone de login*/
+    color: transparent;
+    display:block;/* Para centralizar internamente com deixa o exto em baixo */
+    width: 90px; /*largura*/
+    border: none;
+}
+.fim2:hover{/*cursor ao passar por cima*/
+    height: 86px;/*aumentar*/
+    transition: 1s;/*durante 1 segundo*/
+    color: white;/*tendo a cor*/
+}
+
 .destaque-container {
         width: 500px; /*Largura do destaque*/
         height: 200px; /*Altura do destaque*/
@@ -63,7 +81,7 @@
         display: flex; /*divisão centralizada*/
         flex-wrap: wrap; /*Permite que os itens dentro do container se reorganizem em várias linhas, caso não caibam em uma única linha*/
         justify-content: space-around; /*Distribui os itens igualmente com espaçamento entre eles*/
-        background-image: url("../imagens/extra4.png"); /*Define uma imagem de fundo para o container*/
+        background-image: url("imagens/extra4.png"); /*Define uma imagem de fundo para o container*/
         background-position: 0%; /*Define a posição da imagem de fundo no canto superior esquerdo do container*/
 }
 .flower {
@@ -109,9 +127,18 @@
         padding: 0.5rem; /*Espaçamento interno*/
         gap: 40px; /*Espaçamento entre os itens*/
         border-bottom: 3px solid #5e834e; /*Borda*/
-        background-image: url("../imagens/extra3.png"); /*Image como fundo*/
+        background-image: url("imagens/extra3.png"); /*Image como fundo*/
         background-position: 0%; /*Cor e posição*/
 }
+.principal a{/*links da nav principal*/
+    text-decoration: none;/*os links ficam sem tracinho*/
+    color: royalblue; /*cor do link*/
+}
+
+.principal a:hover{/*ao ser clicado*/
+    color: darkgreen;/*cor do link muda*/
+}
+
 .login-form {
         display: none; /*Centralizar a div*/
         position: absolute; /*Posição*/
