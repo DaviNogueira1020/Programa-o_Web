@@ -1,7 +1,7 @@
 
 <?php 
     session_start();
-    
+    include('novo_login.php');
     
     //validacoes do login, condicoes de entrada
     if(isset($_POST['botao']) && !empty($_POST['emailLogin']) && !empty($_POST['senhaLogin'])){//verifica: se o boatao foi apertado, e se nenhum campo estar vazio
@@ -12,9 +12,9 @@
         //pegar os dados do login para valida-los
         $emailLogin = $_POST['emailLogin'];
         $senhaLogin = $_POST['senhaLogin'];
-
+        
         //procura no banco de dados se existe dados identicos aos inseridos no login, 'email' e 'senha'
-        $loginUser = mysqli_query($conexao,"SELECT * FROM mybanco.pessoa WHERE email = '$emailLogin' and senha = '$senhaLogin' ");
+        $loginUser = mysqli_query($conexao,"SELECT * FROM $database.$nomeTabela WHERE email = '$emailLogin' and senha = '$senhaLogin' ");
         
 
         //retornar um array que corresponde a consulta "select"
@@ -24,7 +24,7 @@
             
             $_SESSION['emailLogin'] = $emailLogin; 
             $_SESSION['sennhaLogin'] = $senhaLogin;
-            header('location: ..\index.html');//acessa a pagina e armazena os dados login na sessao 
+            header('location: ../index.php');//acessa a pagina e armazena os dados login na sessao 
 
         }else{
             unset($_SESSION['emailLogin']);

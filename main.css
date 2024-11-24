@@ -11,6 +11,7 @@
 }
 
 .inicio{
+    color: royalblue;
     flex: 1; /*item 1*/
     color: white; /*cor*/
     display: flex; /*Para centralizar internamente com flex*/
@@ -20,6 +21,7 @@
 }
     
 .meio{
+    
     display: flex; /*Para centralizar internamente com flex*/
     align-items: center; /*Centraliza verticalmente*/
     justify-content: center; /*centralisa horizontalmente*/
