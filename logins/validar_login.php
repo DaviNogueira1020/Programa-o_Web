@@ -2,6 +2,7 @@
 <?php 
     session_start();
     
+    
     //validacoes do login, condicoes de entrada
     if(isset($_POST['botao']) && !empty($_POST['emailLogin']) && !empty($_POST['senhaLogin'])){//verifica: se o boatao foi apertado, e se nenhum campo estar vazio
         //print_r($_REQUEST); //verifica se os dados estao passando pelo login
@@ -23,7 +24,7 @@
             
             $_SESSION['emailLogin'] = $emailLogin; 
             $_SESSION['sennhaLogin'] = $senhaLogin;
-            header('location: ..\index.php');//acessa a pagina e armazena os dados login na sessao 
+            header('location: ..\index.html');//acessa a pagina e armazena os dados login na sessao 
 
         }else{
             unset($_SESSION['emailLogin']);

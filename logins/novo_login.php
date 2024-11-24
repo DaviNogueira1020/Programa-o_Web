@@ -12,26 +12,8 @@ if(isset($_POST['submit'])){
 */
 include('conexao.php'); //importa a conexao do banco de dados
 
-//verifica se o banco existe
-
-if (mysqli_query($conexao,"CREATE DATABASE IF NOT EXISTS mybanco")){//cria o banco de dados "mybanco"(se ele nao existir)
-  
-    //echo "Banco criado!";
-}
-
-
-//verifica se existe a tabela "pessoa", se nao -> cria ela, pelo amor de Deus nao excluir
-
-$criaTabela = mysqli_query($conexao, "CREATE TABLE IF NOT EXISTS pessoa(
-    id_pessoa INT NOT NULL UNIQUE AUTO_INCREMENT,
-    nome VARCHAR(50) NOT NULL,
-    cpf INT NOT NULL UNIQUE,
-    nascimento DATE NOT NULL,
-    email VARCHAR(50) NOT NULL UNIQUE,
-    senha VARCHAR(36) NOT NULL,
-    PRIMARY KEY(id_pessoa)  )");
-
 //inserir os dados do formulario nas variaveis
+
 if(isset($_POST['submit'])){
     $nome1 = $_POST['nome'];
     $cpf1 = $_POST['cpf'];
