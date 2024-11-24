@@ -23,7 +23,7 @@
             
             $_SESSION['emailLogin'] = $emailLogin; 
             $_SESSION['sennhaLogin'] = $senhaLogin;
-            header('location: teste.php');//acessa a pagina e armazena os dados login na sessao 
+            header('location: ..\index.php');//acessa a pagina e armazena os dados login na sessao 
 
         }else{
             unset($_SESSION['emailLogin']);

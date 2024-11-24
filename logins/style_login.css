@@ -9,10 +9,10 @@ body{/*corpo da pagina*/
     background-image: url("../imagens/extra4.png");/*fundo*/
     background-repeat: no-repeat no-repeat; /*imagem nao vai repetir no fundo caso coloque uma imagem pequena*/
     background-size: cover;/*estica o fundo*/
-    border: 1px solid black;/*borda*/
     
 }
 div{
+    
     font-size: 20px;/*espaca os imputs*/
     text-align: center;
     position: absolute;/*a cor do fundo fica exatamente enquadrada sobre os intens*/
@@ -23,7 +23,7 @@ div{
     border-radius: 20px;
     color: green;
     background-color: white;
-    
+    border: 2px solid darkgreen;/*borda*/
 }
 
 div:hover{/*quando o curso passa em cima da div*/
@@ -56,7 +56,7 @@ fieldset{
     text-align: left;
     border-color: blue;
     border-radius: 40px;
-    height: 68px;/*tamanho da linha em volta do campo*/
+    height: 73px;/*tamanho da linha em volta do campo*/
 }
 
 fieldset:hover{
